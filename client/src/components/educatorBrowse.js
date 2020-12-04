@@ -12,7 +12,6 @@ const EducatorBrowse = (props) => {
   useEffect(() => {
     API.getAll().then((results) => {
       setLessons(results.data);
-      
     });
   }, []);
 
@@ -25,9 +24,12 @@ const EducatorBrowse = (props) => {
     setFilteredLessons(...lessons);
     console.log(event.target.name);
 
-    const newFilter = lessons.filter(
-      (lesson) => lesson.gradeLevel[0] === event.target.name
-    );
+    const newFilter = lessons
+      .filter(
+        (lesson) => lesson.gradeLevel[0] === event.target.name
+        // slice will allow for showing the items in the index chosen
+      )
+      .slice(0, 5);
     setFilteredLessons(newFilter);
   };
 
@@ -43,12 +45,24 @@ const EducatorBrowse = (props) => {
           <h2>Grade ranges</h2>
           <p>Select a grade range. Results will display below.</p>
           <form>
-          <div className="boxes">
-      <button className="button" onClick={handleGradeChange} name="k-5">K-5</button>
-      <button className="button" onClick={handleGradeChange} name="6-8">6-8</button>
-      <button className="button" onClick={handleGradeChange} name="9-12">9-12</button>
-      <button className="button" onClick={resetFilters}>Reset Filters</button>
-    </div>
+            <div className="boxes">
+              <button className="button" onClick={handleGradeChange} name="k-5">
+                K-5
+              </button>
+              <button className="button" onClick={handleGradeChange} name="6-8">
+                6-8
+              </button>
+              <button
+                className="button"
+                onClick={handleGradeChange}
+                name="9-12"
+              >
+                9-12
+              </button>
+              <button className="button" onClick={resetFilters}>
+                Reset Filters
+              </button>
+            </div>
             <h4 className="results">
               <u>Results</u>
             </h4>
