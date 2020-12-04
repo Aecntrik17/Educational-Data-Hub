@@ -65,7 +65,6 @@ const EditorPreview = () => {
                 <u>Assigned Article</u>
               </h2>
               <h4>Title: {article.articleName}</h4>
-              <p>Link: {article.researchDocLink}</p>
               <p>Description: {article.articleAbstract}</p>
               <p>File: {article.fileArray && article.fileArray[0].title}</p>
               <a
