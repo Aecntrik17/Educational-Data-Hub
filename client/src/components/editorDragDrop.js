@@ -76,6 +76,7 @@ function MyDropzone(props) {
             lessonID,
             fileResponse.data.file._id
           );
+          alert("Lesson and File have been successfully uploaded!");
           history.push("/");
         } else {
           setErrorMsg("Please select a file to add");

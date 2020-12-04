@@ -61,7 +61,6 @@ function EditorUpload() {
         gradeLevel,
       })
         .then((res) => {
-          alert("lesson submitted");
           setLessonID(res.data._id);
           // history.push("/");
         })
