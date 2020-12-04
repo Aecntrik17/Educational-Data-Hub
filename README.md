@@ -1,20 +1,19 @@
 ![Screen Shot 2020-10-25 at 8 53 06 PM](https://user-images.githubusercontent.com/64434411/97123855-1b48dc80-1704-11eb-85e7-de148015ef6b.png)
 
-# Educational Data Stream (EDS)
+# Fellow Syllabus Project (FSP)
 
-Deployed app: https://educational-data-stream.herokuapp.com/ <br>
+Deployed app: https://fellow-syllabus-project.herokuapp.com/ <br>
 GitHub repo: https://github.com/gsteinseroussi/Educational-Data-Hub
 
 ## Description
 
 ![Screen Shot 2020-10-25 at 8 56 49 PM](https://user-images.githubusercontent.com/64434411/97123970-a0cc8c80-1704-11eb-8a38-9ed51c4a230f.png)
 
-EDS is a web application, built with React, that has four distinct users.
+FSP is a web application, built with React, that has three distinct users.
 
-1. The Administrator: this person works for the company that uses EDS to manage the database as needed. Tasks may include adjusting the settings of articles so they available to editors.
-2. Editors: these people are learning specialists hired by the company to create lesson plans based on research.
-3. Researchers: these people are not affiliated with the company, but they contribute their educational research to the company for implementation in classrooms.
-4. Educators: these are the end users of the application. They can browse the available lesson plans for using in their classrooms.
+1. Researchers: these people are not affiliated with the company, but they contribute their educational research to the company for implementation in classrooms.
+2. Editors: learning specialists hired by the company to curate the articles submitted by researchers into lesson plans.
+3. Educators: anyone looking for content to enhance their lesson plans for using in their classrooms.
 
 See "Usage" for more details.
 
@@ -32,41 +31,19 @@ See "Usage" for more details.
 
 ## Usage
 
-The three user types interact differently with EDS. Each user has directions on the screen.
+The three user types interact differently with PFS. Each user has directions on the screen.
 
-1. The educator first selects the grade range they teach.
+1.  Reseachers firsts submit the name of their article, their own name & an abstract of their research.
 
-   ![Screen Shot 2020-10-25 at 9 30 48 PM](https://user-images.githubusercontent.com/64434411/97125158-5e597e80-1709-11eb-8541-29d6b35fb196.png)
+Once the article information is submitted, the "Article Information" box is replaced with a file upload box. The researcher then submits their article as a PDF (other file types are also accepted) using our drag-and-drop file uploader, or by clicking if they prefer to select their file from a file tree.
 
-   Available lesson plans for that grade range then populate.
+2. Editors can search for submitted articles by grade level and then download the corresponding file. The Editor will curate a lesson plan
+   and submit it through the portal inserting required fields and uploading a document using the drag & drop function.
 
-   ![Screen Shot 2020-10-25 at 9 33 30 PM](https://user-images.githubusercontent.com/64434411/97125257-bee8bb80-1709-11eb-974e-ca71d88f4113.png)
-
-   When the educator selects "View Details", the lesson plan populates to the right with a link to the full plan. Reviews of the plan by other educators populate at the same time below the lesson plan.
-
-   ![Screen Shot 2020-10-25 at 9 34 29 PM](https://user-images.githubusercontent.com/64434411/97125529-a4631200-170a-11eb-9466-d778eab24b93.png)
-
-   The user is encouraged to add their own review to assist other educators decide whether the lesson plan will be a good choice for them.
-
-2. The reseacher firsts submit the name of their article, their own name & an abstract of their research.
-
-   ![Screen Shot 2020-10-25 at 9 18 58 PM](https://user-images.githubusercontent.com/64434411/97124756-b8594480-1707-11eb-8b73-60760aca766f.png)
-
-   Once the article information is submitted, the "Article Information" box is replaced with a file upload box. The researcher then submits their article as a PDF (other file types are also accepted) using our drag-and-drop file uploader, or by clicking if they prefer to select their file from a file tree.
-
-   ![Screen Shot 2020-10-25 at 9 20 58 PM](https://user-images.githubusercontent.com/64434411/97124811-ff473a00-1707-11eb-85b8-a1f8b2e093e6.png)
-
-3. The editor is first presented with an article submitted by a researcher. After the editor completes the lesson plans based on the article, they will complete the upload form, including a link to the lesson plan as a Google Doc link which the educator will use to download the plan.
-
-   ![Screen Shot 2020-10-25 at 9 43 50 PM](https://user-images.githubusercontent.com/64434411/97125719-2eab7600-170b-11eb-8538-781c046043da.png)
-
-   On the editors page, editors also have access to other articles.
-
-   ![Screen Shot 2020-10-25 at 9 49 23 PM](https://user-images.githubusercontent.com/64434411/97125973-f3f60d80-170b-11eb-91cf-e2b9b418e72d.png)
+3. Educators can search for lesson plans by grade number. Lesson plan previews are available by clicking on "view details" which will also allow the user to download the corresponding file. Educators can also leave a review of the lesson plan in a comments section so that other users may benefit from their feedback.
 
 ## Future Development
 
-- Create a drag-and-drop submission form for editors like the one for researchers.
 - Improve lesson plan searchability for educators, allowing them to search for specific subjects, keywords, etc.
 
 ## License
@@ -75,11 +52,11 @@ No license: When you make a creative work (which includes code), the work is und
 
 ## Developers
 
-EDS has a great team!
+PFS has a great team!
 
 - <b>Lisa Ellison</b> designed the page & carried out layout & styling throughout, and helped identify the concept. <br> Github profile: <https://github.com/lisaellison> <br> Email: <lisaellison9@gmail.com>
 
-- <b>Aaron Sims</b> provided the idea. Creating the comments box, front- & back-end, for the educators' reviews was his corner of the project. He contributed to other parts of the project as well. <br>Github profile: <https://github.com/Aecntrik17> <br>Email: <aaron@adsimsllc.com>
+- <b>Aaron D. Sims</b> provided the idea. Creating the comments box, front- & back-end, for the educators' reviews was his corner of the project. He contributed to other parts of the project as well. <br>Github profile: <https://github.com/Aecntrik17> <br>Email: <aaron@adsimsllc.com>
 
 - <b>Paul Sloderbeck</b> created the drag-and-drop feature for the researcher file upload & worked mostly on back-end development, with front-end contributions. <br>Github profile: <https://github.com/paulsloderbeck> <br>Email: <paul.sloderbeck@gmail.com>
 

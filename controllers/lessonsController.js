@@ -1,17 +1,18 @@
 const db = require("../database/models");
 const url = require("url");
-//defining methods for controllersController
+//defining methods for lessonsController
 module.exports = {
   findAll: function (req, res) {
     db.Lesson.find({})
       .sort({ date: -1 })
+      .populate("fileArray")
       .then((dbModel) => res.json(dbModel))
       .catch((err) => res.status(422).json(err));
   },
   findByGradeLevel: function (req, res) {
-    console.log("findbygradelevel")
+    console.log("findbygradelevel");
     console.log("req.url", req.url);
-    console.log("req.query", req.query)
+    console.log("req.query", req.query);
 
     const k5 = req.query["k-5"];
     const sixEight = req.query["6-8"];
@@ -37,6 +38,7 @@ module.exports = {
     db.Lesson.findById(req.params.id)
       .sort({ date: -1 })
       .populate("commentArray")
+      .populate("file")
       .then((dbModel) => res.json(dbModel))
       .catch((err) => res.status(422).json(err));
   },

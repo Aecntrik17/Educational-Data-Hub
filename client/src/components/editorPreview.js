@@ -70,13 +70,14 @@ const EditorPreview = () => {
               <p>File: {article.fileArray && article.fileArray[0].title}</p>
               <a
                 href="#/"
-                onClick={() =>
+                onClick={() => {
                   downloadFile(
                     article.fileArray[0]._id,
                     article.fileArray[0].file_path,
                     article.fileArray[0].file_mimetype
-                  )
-                }
+                  );
+                  claimArticle(article._id);
+                }}
               >
                 Download Article File
               </a>

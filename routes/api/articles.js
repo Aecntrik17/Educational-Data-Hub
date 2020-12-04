@@ -17,8 +17,9 @@ router
   // .put(articlesController.claimArticle)
   .delete(articlesController.remove);
 
-  router
-  .route("/comment/:id")
-  .put(articlesController.updateComment)
+router.route("/comment/:id").put(articlesController.updateComment);
+
+// necesaary to focuse exclusivley on claimed
+router.route("/claimed/:id").put(articlesController.claimArticle);
 
 module.exports = router;

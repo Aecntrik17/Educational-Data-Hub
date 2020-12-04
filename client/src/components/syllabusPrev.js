@@ -41,9 +41,9 @@ const SyllabusPrev = (props) => {
             href="#/"
             onClick={() =>
               downloadFile(
-                lesson.fileArray[0]._id,
-                lesson.fileArray[0].file_path,
-                lesson.fileArray[0].file_mimetype
+                props.selectedLesson.file._id,
+                props.selectedLesson.file.file_path,
+                props.selectedLesson.file.file_mimetype
               )
             }
           >
