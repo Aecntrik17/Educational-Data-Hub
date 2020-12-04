@@ -76,6 +76,7 @@ function MyDropzone(props) {
             articleID,
             fileResponse.data.file._id
           );
+          alert("Your Article and File have been submitted!");
           history.push("/");
         } else {
           setErrorMsg("Please select a file to add.");
