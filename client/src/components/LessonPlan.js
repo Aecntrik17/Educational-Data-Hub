@@ -5,7 +5,7 @@ import React from "react";
 const LessonPlan = ({ article }) => {
   console.log(article);
   return (
-    <div onClick={(article) => console.log(article._id)}>
+    <div className="result" onClick={(article) => console.log(article._id)}>
       Lesson Plan
       {article.articleName}
       {article.articleAbstract}

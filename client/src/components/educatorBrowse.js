@@ -29,7 +29,7 @@ const EducatorBrowse = (props) => {
         (lesson) => lesson.gradeLevel[0] === event.target.name
         // slice will allow for showing the items in the index chosen
       )
-      .slice(0, 5);
+      .slice(0, 3);
     setFilteredLessons(newFilter);
   };
 
@@ -72,7 +72,7 @@ const EducatorBrowse = (props) => {
               <ul className="list-group">
                 {filteredLessons.map((lesson) => (
                   <li className="list-group-item" key={lesson._id}>
-                    <h5>{lesson.lessonName}</h5>
+                    <h5>Lesson Name: {lesson.lessonName}</h5>
                     <p className="abstract">{lesson.lessonAbstract}</p>
                     <button
                       onClick={(e) => props.viewDetails(e.target.value)}

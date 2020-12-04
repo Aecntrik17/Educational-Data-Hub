@@ -4,7 +4,13 @@
 }
 
 .button {
-  margin-left: 2em;
+  /* margin-left: 2em; */
+  margin: 10px;
+  display: block;
+}
+
+.list-group-item {
+  margin: 10px;
 }
 
 .results {
