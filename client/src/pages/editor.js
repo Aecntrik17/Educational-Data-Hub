@@ -20,19 +20,14 @@ const Editor = (props) => {
                 <div className="searchContainer">
                   <h2>How to use this page</h2>
                   <ol>
+                    <li>Review Articles and download corresponding file</li>
                     <li>
-                      Process the article presented to you upon loading the
-                      editor page
+                      Create lesson plan and submit while uploading file using
+                      drag and drop
                     </li>
                     <li>
-                      Create lesson plans and place them in a Google document
-                    </li>
-                    <li>
-                      Adjust the "Share" settings so anyone with a link can edit
-                    </li>
-                    <li>
-                      Complete the form & submit the lesson plan link as a
-                      Google document
+                      Be sure to indicate which grade level your lesson plan
+                      best correlates to
                     </li>
                   </ol>
                 </div>
